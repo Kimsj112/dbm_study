@@ -1,0 +1,163 @@
+2024-03-28 10:34:40.595 - DBeaver 23.3.5.202402181738 is starting
+2024-03-28 10:34:40.596 - OS: Windows 10 10.0 (amd64)
+2024-03-28 10:34:40.596 - Java version: 17.0.6 by Eclipse Adoptium (64bit)
+2024-03-28 10:34:40.597 - Install path: 'D:\0900_gb_sjk\dbms\resource\dbeaver'
+2024-03-28 10:34:40.597 - Instance path: 'file:/D:/0900_gb_sjk/dbms/workspace/'
+2024-03-28 10:34:40.598 - Memory available 64Mb/1024Mb
+2024-03-28 10:34:40.604 - Create display
+2024-03-28 10:34:40.661 - Initialize desktop platform...
+2024-03-28 10:34:40.732 - BounceCastle bundle found. Use JCE provider BC
+> Start Core File Systems [org.eclipse.core.filesystem 1.10.200.v20231102-0934]
+> Start Core Resource Management [org.eclipse.core.resources 3.20.0.v20231102-0934]
+> Start 팀 지원 핵심 [org.eclipse.team.core 3.10.200.v20231106-1240]
+> Start DBeaver UI Navigator [org.jkiss.dbeaver.ui.navigator 1.0.125.202402181738]
+2024-03-28 10:34:40.944 - Initialize base platform...
+2024-03-28 10:34:40.965 - Platform initialized (303ms)
+> Start DBeaver UI Editors - Base [org.jkiss.dbeaver.ui.editors.base 1.0.125.202402181738]
+2024-03-28 10:34:41.003 - Starting instance server at http://localhost:50544
+2024-03-28 10:34:41.009 - Run workbench
+> Start Eclipse e4 작업영역 SWT [org.eclipse.e4.ui.workbench.swt 0.17.200.v20231030-2045]
+> Start Eclipse Application Services [org.eclipse.e4.core.services 2.4.200.v20231103-2012]
+> Start Eclipse UI Application Services [org.eclipse.e4.ui.services 1.6.200.v20231030-2045]
+> Start Eclipse e4 Progress View [org.eclipse.e4.ui.progress 0.4.200.v20231030-2045]
+> Start Eclipse Bindings Support [org.eclipse.e4.ui.bindings 0.14.200.v20231030-2045]
+> Start Eclipse e4 core commands [org.eclipse.e4.core.commands 1.1.200.v20231108-1058]
+> Start EMF XML/XMI Persistence [org.eclipse.emf.ecore.xmi 2.36.0.v20231002-1156]
+> Start Eclipse CSS SWT Theme Support [org.eclipse.e4.ui.css.swt.theme 0.14.200.v20230913-1724]
+> Start Eclipse e4 작업영역 기능 추가 [org.eclipse.e4.ui.workbench.addons.swt 1.5.200.v20231106-1600]
+> Start Eclipse e4 작업영역 SWT 렌더러 [org.eclipse.e4.ui.workbench.renderers.swt 0.16.200.v20231030-2045]
+> Start Eclipse Dependency Injection Extensions [org.eclipse.e4.core.di.extensions 0.18.100.v20231103-2012]
+> Start Eclipse CSS SWT Support [org.eclipse.e4.ui.css.swt 0.15.200.v20231025-0632]
+> Start jna [com.sun.jna 5.13.0.v20230812-1000]
+Warning: NLS unused message: BlockedJobsDialog_UserInterfaceTreeElement in: org.eclipse.ui.internal.progress.messages
+2024-03-28 10:34:42.260 - Configure workbench window
+> Start DBeaver SQL Model [org.jkiss.dbeaver.model.sql 1.0.115.202402181738]
+2024-03-28 10:34:42.370 - Total database drivers: 112 (112)
+> Start 도움말 시스템 코어 [org.eclipse.help 3.10.200.v20231106-1240]
+2024-03-28 10:34:42.426 - Create actions
+2024-03-28 10:34:42.432 - Disable Eclipse action set 'org.eclipse.ui.edit.text.actionSet.annotationNavigation'
+2024-03-28 10:34:42.432 - Disable Eclipse action set 'org.eclipse.ui.WorkingSetActionSet'
+2024-03-28 10:34:42.432 - Disable Eclipse action set 'org.eclipse.ui.actionSet.openFiles'
+2024-03-28 10:34:42.668 - Initialize workbench window
+2024-03-28 10:34:42.672 - Finish initialization
+> Start 기본 문서 편집기 [org.eclipse.ui.editors 3.17.100.v20231106-1600]
+> Start 텍스트 편집기 프레임워크 [org.eclipse.ui.workbench.texteditor 3.17.200.v20231106-1600]
+> Start DBeaver UI Editors - Data [org.jkiss.dbeaver.ui.editors.data 1.0.125.202402181738]
+Warning: NLS unused message: actions_navigator__objects in: org.jkiss.dbeaver.ui.editors.sql.internal.SQLEditorMessages
+> Start DBeaver UI Editors - SQL [org.jkiss.dbeaver.ui.editors.sql 1.0.125.202402181738]
+> Start DBeaver SQL Terminal [org.jkiss.dbeaver.ui.editors.sql.terminal 1.0.101.202402181738]
+> Start 핵심 비교 지원 [org.eclipse.compare.core 3.8.300.v20231106-1240]
+> Start 인터넷 연결 관리 사용자 인터페이스 [org.eclipse.ui.net 1.5.200.v20231106-1240]
+> Start Internet Connection Management [org.eclipse.core.net 1.5.200.v20231106-1240]
+> Start DBeaver Sample Database [org.jkiss.dbeaver.ext.sample.database 1.0.162.202402181738]
+> Start DBeaver Tip of the day [org.jkiss.dbeaver.ext.ui.tipoftheday 1.0.131.202402181738]
+> Start GEF Classic Draw2d [org.eclipse.draw2d 3.14.100.202311222042]
+> Start GEF Classic GEF (MVC) [org.eclipse.gef 3.16.0.202311222042]
+> Start DBeaver ERD UI [org.jkiss.dbeaver.erd.ui 3.0.85.202402181738]
+> Start DBeaver ERD Model [org.jkiss.dbeaver.erd.model 1.0.85.202402181738]
+> Start DBeaver JDBC Model [org.jkiss.dbeaver.model.jdbc 1.0.18.202402181738]
+> Start DBeaver Oracle Model [org.jkiss.dbeaver.ext.oracle 2.1.210.202402181738]
+> Start DBeaver UI Editors - Connections [org.jkiss.dbeaver.ui.editors.connection 1.0.116.202402181738]
+> Start 콘솔 [org.eclipse.ui.console 3.13.100.v20230914-0751]
+Warning: NLS unused message: InputStreamMonitor_label in: org.eclipse.debug.internal.core.DebugCoreMessages
+Warning: NLS unused message: OutputStreamMonitor_label in: org.eclipse.debug.internal.core.DebugCoreMessages
+> Start 디버그 핵심 [org.eclipse.debug.core 3.21.200.v20231021-1513]
+2024-03-28 10:34:44.197 - Connect with 'localhost' (oracle_thin-18e7dbe2de1-3e59c67177ff5603)
+2024-03-28 10:34:44.217 - Execution context opened (localhost; Main; 0)
+> Start DBeaver SQL Language Semantic Model [org.jkiss.dbeaver.model.lsm 1.0.20.202402181738]
+2024-03-28 10:34:44.817 - Execution context opened (localhost; Metadata; 1)
+2024-03-28 10:34:44.886 - Connected (oracle_thin-18e7dbe2de1-3e59c67177ff5603, Oracle JDBC driver [23.2.0.0.0])
+2024-03-28 10:34:44.888 - Execution context opened (localhost; SQLEditor <Script.sql>; 2)
+2024-03-28 10:34:46.652 - Open [https://dbeaver.io/product/version.xml]
+> Start DBeaver Tasks - Native Tools UI [org.jkiss.dbeaver.tasks.native.ui 1.0.103.202402181738]
+> Start DBeaver Oracle UI [org.jkiss.dbeaver.ext.oracle.ui 1.0.112.202402181738]
+> Start DBeaver Tasks - General UI [org.jkiss.dbeaver.tasks.ui 1.0.103.202402181738]
+2024-03-28 10:37:33.401 - Can't get column 'PLUGGED_IN': ORA-17006: 열 이름이 부적합합니다.
+> Start ICU4J Base [com.ibm.icu.base 58.2.0.v20170418-1837]
+2024-03-28 10:37:40.613 - Object 'BIN$+IBBBBPHQF61FzooDBil5A==$0' owner 'BIN$vMpgywBIQkCeknuVS5tjSQ==$0' not found
+2024-03-28 10:37:40.614 - Object 'BIN$1g/DoAyLQyquA9RLG31S7A==$0' owner 'BIN$IvONDU6zT3yj9JFj2pOMiA==$0' not found
+2024-03-28 10:37:40.614 - Object 'BIN$3Mj/7yTnSD2TVC/ER8Xuww==$0' owner 'BIN$kGMwh5OaTsivkgoMNAeZtA==$0' not found
+2024-03-28 10:37:40.614 - Object 'BIN$63DyKZawRDmkGN+mbgvHdw==$0' owner 'BIN$wqaRkkbbQxmRjqRqu3uNGA==$0' not found
+2024-03-28 10:37:40.614 - Object 'BIN$931Lejn9QwWxg/nhh6brvQ==$0' owner 'BIN$NH0jpCZ+SoiyA8wOh6GMmg==$0' not found
+2024-03-28 10:37:40.614 - Object 'BIN$CJkDm65uTUGThYDNuwGIrA==$0' owner 'BIN$ov9JUrMNT8yrjWYydHdgdg==$0' not found
+2024-03-28 10:37:40.614 - Object 'BIN$Ed/4PfiFSNaqP1p0txkdCA==$0' owner 'BIN$iWuaxLIqQPuZJXLGtqQ5eg==$0' not found
+2024-03-28 10:37:40.614 - Object 'BIN$IEcNKQGgSBappQfoy2Yg1w==$0' owner 'BIN$NH0jpCZ+SoiyA8wOh6GMmg==$0' not found
+2024-03-28 10:37:40.614 - Object 'BIN$IuxhUDRmRCqpl87eVCSeIA==$0' owner 'BIN$yMVo5n8zT4qJbVGaycwyZQ==$0' not found
+2024-03-28 10:37:40.614 - Object 'BIN$M4OouwGtR7WVNqC1L4dz2g==$0' owner 'BIN$vMpgywBIQkCeknuVS5tjSQ==$0' not found
+2024-03-28 10:37:40.614 - Object 'BIN$NvAO2a1BSs2ydRALb00ACg==$0' owner 'BIN$NH0jpCZ+SoiyA8wOh6GMmg==$0' not found
+2024-03-28 10:37:40.614 - Object 'BIN$SYV5Wi5vRP+Un6k1n1zX1Q==$0' owner 'BIN$NH0jpCZ+SoiyA8wOh6GMmg==$0' not found
+2024-03-28 10:37:40.615 - Object 'BIN$SYV5Wi5vRP+Un6k1n1zX1Q==$0' owner 'BIN$NH0jpCZ+SoiyA8wOh6GMmg==$0' not found
+2024-03-28 10:37:40.615 - Object 'BIN$SqPTi8pcQq2paG9McUe40A==$0' owner 'BIN$wqaRkkbbQxmRjqRqu3uNGA==$0' not found
+2024-03-28 10:37:40.615 - Object 'BIN$TZ8WIyzwTTyHXcDX5yhR8A==$0' owner 'BIN$vMpgywBIQkCeknuVS5tjSQ==$0' not found
+2024-03-28 10:37:40.615 - Object 'BIN$b5uAvU6yQH+eAED6AqkSqg==$0' owner 'BIN$QAKsiwyRSTWOB+VUQJB98A==$0' not found
+2024-03-28 10:37:40.615 - Object 'BIN$cFMJjVlxS0iuzBugWMDP1Q==$0' owner 'BIN$QAKsiwyRSTWOB+VUQJB98A==$0' not found
+2024-03-28 10:37:40.615 - Object 'BIN$cJTyaD7VQwS9TaMYDNg1mQ==$0' owner 'BIN$vMpgywBIQkCeknuVS5tjSQ==$0' not found
+2024-03-28 10:37:40.615 - Object 'BIN$l0KzA8y6RGOCHc9qXqqglg==$0' owner 'BIN$QAKsiwyRSTWOB+VUQJB98A==$0' not found
+2024-03-28 10:37:40.615 - Object 'BIN$n0oTIhDTSTK0Wy4zCmfKXQ==$0' owner 'BIN$yNsd4NHjRgCQNnBzwFKjSg==$0' not found
+2024-03-28 10:37:40.615 - Object 'BIN$ntFsGxrXSlOrc05yRylrOQ==$0' owner 'BIN$QAKsiwyRSTWOB+VUQJB98A==$0' not found
+2024-03-28 10:37:40.615 - Object 'BIN$pdgfC2qCQ7qQBWQuUFMZYw==$0' owner 'BIN$wqaRkkbbQxmRjqRqu3uNGA==$0' not found
+2024-03-28 10:37:40.615 - Object 'BIN$ppVCZOXmSGydEfVzPQJ03Q==$0' owner 'BIN$NH0jpCZ+SoiyA8wOh6GMmg==$0' not found
+2024-03-28 10:37:40.615 - Object 'BIN$tmmXuYaVR3e4N1Z8y/efkg==$0' owner 'BIN$vMpgywBIQkCeknuVS5tjSQ==$0' not found
+2024-03-28 10:37:40.615 - Object 'BIN$uKedEmZBS+ycJ5Bo4udk0w==$0' owner 'BIN$1S9xHmd1RaSZR8uYtnEqkA==$0' not found
+2024-03-28 10:37:40.615 - Object 'BIN$vPKOfaLXR5OSpbKk2Hgyqw==$0' owner 'BIN$NH0jpCZ+SoiyA8wOh6GMmg==$0' not found
+2024-03-28 10:37:40.616 - Object 'BIN$wEbq3IHIQqGIMIjuzKwDOw==$0' owner 'BIN$tAycnCFBR4ujjO+yBgtXJA==$0' not found
+2024-03-28 10:37:40.616 - Object 'BIN$wJjEbqLcTv2ggL2gPmd6vg==$0' owner 'BIN$1S9xHmd1RaSZR8uYtnEqkA==$0' not found
+2024-03-28 10:37:40.616 - Can't get column 'COLUMN_NAMES_NUMS': ORA-17006: 열 이름이 부적합합니다.
+> Start DBeaver Data Transfer [org.jkiss.dbeaver.data.transfer 2.0.109.202402181738]
+2024-03-28 11:08:35.278 - SQL Error [942] [42000]: ORA-00942: table or view does not exist
+
+
+Error position: line: 22 pos: 11
+org.jkiss.dbeaver.model.sql.DBSQLException: SQL Error [942] [42000]: ORA-00942: table or view does not exist
+
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:133)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:601)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$2(SQLQueryJob.java:504)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:511)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:963)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4134)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:123)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:121)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5148)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:114)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:608)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1335)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:533)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:176)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1305)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1877)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1520)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2557)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2506)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:334)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:131)
+	... 12 more
+Caused by: Error : 942, Position : 11, SQL = DROP TABLE TBL_MEMBER, Original SQL = DROP TABLE TBL_MEMBER, Error Message = ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710)
+	... 26 more
+2024-03-28 12:12:34.089 - Execution context closed (localhost, 0)
+2024-03-28 12:12:34.100 - Execution context closed (localhost, 1)
+2024-03-28 12:12:34.113 - Execution context closed (localhost, 2)
+2024-03-28 12:12:34.113 - Disconnected (oracle_thin-18e7dbe2de1-3e59c67177ff5603)
+2024-03-28 12:17:16.042 - Connect with 'localhost' (oracle_thin-18e7dbe2de1-3e59c67177ff5603)
+2024-03-28 12:17:16.042 - Execution context opened (localhost; Main; 3)
+2024-03-28 12:17:16.057 - Execution context opened (localhost; Metadata; 4)
+2024-03-28 12:17:16.078 - Connected (oracle_thin-18e7dbe2de1-3e59c67177ff5603, Oracle JDBC driver [23.2.0.0.0])
+2024-03-28 12:17:16.083 - Execution context opened (localhost; SQLEditor <Script.sql>; 5)
+> Start DBeaver PostgreSQL Model [org.jkiss.dbeaver.ext.postgresql 2.1.198.202402181738]
+> Start DBeaver PostgreSQL UI [org.jkiss.dbeaver.ext.postgresql.ui 1.0.101.202402181738]
+2024-03-28 12:55:15.171 - Execution context closed (localhost, 5)
+2024-03-28 12:55:15.302 - DBeaver is stopping
+2024-03-28 12:55:15.302 - Stop instance server
+2024-03-28 12:55:16.306 - Instance server has been stopped
+2024-03-28 12:55:16.306 - DBeaver shutdown completed

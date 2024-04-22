@@ -1,0 +1,187 @@
+-- 시퀀스(Sequence)
+-- 오라클에서 중복되지 않는 값을 자동으로 생성하는 것
+-- 보통 pk에 중복값을 방지하기 위해 사용한다.
+
+-- 시퀀스 생성
+-- CREATE SEQUENCE 시퀀스명;
+
+-- 시퀀스 삭제
+-- DROP SEQUENCE 시퀀스명;
+
+-- 시퀀스 사용
+-- 시퀀스명.NEXTVAL
+
+CREATE SEQUENCE SEQ_BOOK;
+CREATE SEQUENCE SEQ_MEMBER;
+
+CREATE TABLE MEMBERS
+(MEMBER_ID VARCHAR2(1000),
+MEMBER_NAME VARCHAR2(1000),AGE NUMBER, PHONE_NUMBER NUMBER, ADDRESS VARCHAR2(1000))
+;
+
+INSERT INTO MEMBERS
+(MEMBER_ID, MEMBER_NAME, AGE, PHONE_NUMBER, ADDRESS)
+VALUES(SEQ_MEMBER.NEXTVAL, '홍길동',22,'01012341234','서울시');
+
+INSERT INTO MEMBERS
+(MEMBER_ID, MEMBER_NAME, AGE, PHONE_NUMBER, ADDRESS)
+VALUES(SEQ_MEMBER.NEXTVAL, '신짱구',22,'01012351235','서울시');
+
+INSERT INTO MEMBERS
+(MEMBER_ID, MEMBER_NAME, AGE, PHONE_NUMBER, ADDRESS)
+VALUES(SEQ_MEMBER.NEXTVAL, '김철수',22,'01033333333','경기도');
+
+CREATE TABLE BOOK
+(BOOK_ID VARCHAR2(1000),BOOK_NAME VARCHAR2(1000), CATEGORY VARCHAR2(1000));
+
+INSERT INTO BOOK
+(BOOK_ID, BOOK_NAME,CATEGORY)
+VALUES(SEQ_BOOK.NEXTVAL, '셜록', '추리');
+
+
+
+----------------------------------------------
+-- 시퀀스(Sequence)
+-- 오라클에서 중복되지 않는 값을 자동으로 생성하는 것
+-- 보통 pk에 중복값을 방지하기 위해 사용한다.
+
+-- 시퀀스 생성
+-- CREATE SEQUENCE 시퀀스명;
+
+-- 시퀀스 삭제
+-- DROP SEQUENCE 시퀀스명;
+
+-- 시퀀스 사용
+-- 시퀀스명.NEXTVAL
+-- 대여처리
+UPDATE BOOK
+SET MEMBER_ID = 1
+WHERE BOOK_ID < 3;
+
+DELETE FROM MEMBERS 
+WHERE MEMBER_ID = 1;
+
+
+ALTER TABLE BOOK DROP CONSTRAINT FK_BOOK;
+ALTER TABLE BOOK 
+	ADD CONSTRAINT FK_BOOK FOREIGN KEY(MEMBER_ID)
+	REFERENCES MEMBERS(MEMBER_ID) ON DELETE CASCADE;
+
+SELECT * FROM BOOK;
+
+-------------------------------------------------
+/*
+ * NULL
+ * 정의되지 않은 값
+ * PK는 불가능, FK 가능, UK 가능
+ */
+
+-- 조회시 NULL 값을 다른 값으로 변경
+-- NVL(칼럼명, 값) : NULL 값 대신 다른 값으로 변경 후 조회
+-- NVL2(칼럼명, NULL이 아닐 때 값, NULL일 때 값) 
+
+SELECT COMMISSION_PCT,
+	NVL(COMMISSION_PCT, 0.0),
+	NVL2(COMMISSION_PCT, '커미션 있음', '커미션 없음')
+FROM EMPLOYEES e ;
+
+-----------------------------------------------------
+SELECT * FROM PLAYER p ;
+
+-- PLATER테이블에서 아래 문제 풀기
+
+-- WEIGHT가 70이상이고 80이하인 선수 조회
+SELECT PLAYER_NAME
+FROM PLAYER p 
+WHERE WEIGHT >= 70 AND WEIGHT <=80; 
+
+-- TEAM_ID가 'K03'이고 HEIGHT가 180미만인 선수 조회
+SELECT PLAYER_NAME  
+FROM PLAYER p 
+WHERE TEAM_ID = 'K03' AND HEIGHT < 180;
+
+-- TEAM_ID가 'K06'이고 NICKNAME이 제리인 선수 조회
+SELECT PLAYER_NAME
+FROM PLAYER p 
+WHERE TEAM_ID = 'K06' AND NICKNAME = '제리';
+
+-- HEIGHT가 170이상이고 WEIGHT가 80이상인 선수 이름 검색
+SELECT PLAYER_NAME 
+FROM PLAYER p 
+WHERE HEIGHT >= 170 AND WEIGHT >= 80;
+
+-- STADIUM테이블에서 SEAT_COUNT가 30000초과이고 41000이하인 경기장 검색
+SELECT STADIUM_NAME 
+FROM STADIUM s 
+WHERE SEAT_COUNT > 30000 AND SEAT_COUNT <= 41000;
+
+-- PLAYER테이블에서 TEAM_ID가 'K02'이거나 'K07'이고 포지션은 'MF'인 선수 검색
+-- OR보다 AND가 우선순위가 높다.
+-- POSITION은 예약어이므로 쌍따옴표로 묶어서 사용하는것을 권장한다.
+SELECT PLAYER_NAME , "POSITION"
+FROM PLAYER p 
+WHERE (TEAM_ID = 'K02' OR TEAM_ID = 'K07') AND 
+"POSITION" =  'MF';
+
+SELECT PLAYER_NAME , "POSITION"
+FROM PLAYER p 
+WHERE TEAM_ID IN('K02','K07') AND 
+"POSITION" =  'MF';
+
+-- 트랜잭션
+
+SELECT * FROM BOOK b ;
+
+INSERT INTO BOOK
+(BOOK_ID,BOOK_NAME, CATEGORY)
+VALUES(SEQ_BOOK.NEXTVAL,'TEST', 'IT');
+
+COMMIT;
+ROLLBACK;
+
+UPDATE PLAYER 
+SET PLAYER_NAME ='A'
+WHERE TEAM_ID ='K01';
+
+SELECT * FROM PLAYER p 
+WHERE TEAM_ID = 'K01';
+
+ROLLBACK;
+
+--[실습]
+-- PLAYER테이블에서 POSITION이 NULL인 선수 조회
+SELECT * FROM PLAYER p
+WHERE "POSITION" IS NULL;
+
+-- PLAYER테이블에서 NICKNAME이 NULL인 선수를 '없음'으로 변경하여 조회
+-- 실제 데이터를 바꾸라는 의미가 아니라 SELECT로 바꿔서 조회하라는 의미
+SELECT NICKNAME , NVL(NICKNAME, '없음')
+FROM PLAYER p ;
+
+-- PLAYER테이블에서 POSITION이 NULL인 선수를 '미정'으로 변경 후 조회
+SELECT  PLAYER_NAME, "POSITION" , NVL("POSITION", '미정')
+FROM PLAYER p; 
+
+-- PLAYER테이블에서 NATION이 등록되어 있으면 '용병'아니면 '일반'으로 조회
+SELECT NATION ,NVL2(NATION, '일반', '용병')
+FROM PLAYER p ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

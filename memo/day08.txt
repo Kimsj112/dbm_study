@@ -1,0 +1,90 @@
+형변환 함수
+	- TO_CHAR(원래 형식, 바꿀 형식) 
+	   날짜 포맷 변경할 때 유용하다.
+	   TO_CHAR(SYSDATE, 'YYYY-MM-DD')
+	   YYYY : 년도, MM : 월, DD : 일
+	   HH24 : 24시간, HH : 12시간, MI : 분, SS : 초
+
+	- TO_NUMBER("")
+	- TO_DATE("")
+
+-- TO_CHAR()
+
+-- 숫자에 콤마 찍기
+-- 형식보다 큰 자리수가 들어오면 데이터가 손상된다.
+-- 형식 지정시 0 또는 9를 사용하며
+-- 9를 사용하면 남는 자리수는 공백으로 채운다.
+-- 0을 사용하면 남는 자리수는 0으로 채운다.
+-- FM을 형식 가장 왼쪽에 넣어주면 불필요한 공백을 제거해준다.
+//바꿀형식의 길이가 더 긴 경우 공백 처리가 되는데 FM을 앞에 붙이면 공백이 사라진다.
+SELECT TO_CHAR(123123123, 'FM9,999,999,999') FROM DUAL;
+SELECT TO_CHAR(123123123, '0,000,000,000') FROM DUAL;
+
+
+DCL
+	- GRANT
+	권한 부여
+	GRANT 권한 ON 테이블명 TO 계정;
+
+	- REVOKE
+	권한 회수
+	REVOKE 권한 ON 테이블명 FROM 계정;
+	
+계정 만들기
+	- SYS 계정으로 접속하여 계정을 생성한다.
+	- CREATE USER 계정이름 IDENTIFIED BY 비밀번호;
+접속 권한 부여하기
+	GRANT CREATE SESSION TO 계정명;
+
+테이블 접근 권한 부여하기
+	GRANT SELECT, UPDATE, DELETE, INSERT ON 테이블명 TO 계정명;
+
+계정 삭제
+	DROP USER 계정이름;
+
+
+CASE 표현식
+	CASE
+		WHEN 조건1 THEN 값1
+		WHEN 조건2 THEN 값2
+		....
+		ELSE 값 
+	AND
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
